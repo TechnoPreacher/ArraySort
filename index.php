@@ -23,12 +23,9 @@ function advancedBlob(array &$arrayToSort, bool $isASC = true): bool
     }
 
     if (!$isASC) {
-        $buffer = [];
-        for ($i = 1; $i <= sizeof($arrayToSort); $i++) {
-            $buffer[] = $arrayToSort[sizeof($arrayToSort) - $i];
-        }
-        $arrayToSort = $buffer;
+        $arrayToSort=    array_reverse($arrayToSort);
     }
+
     return true;
 }
 
