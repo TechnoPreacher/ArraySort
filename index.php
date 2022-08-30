@@ -51,6 +51,10 @@ echo (advancedBlob($array3) ? 'could convert' : 'could not convert!').' ';
 echo json_encode($array3) . PHP_EOL;
 
 
+$array1 = [1, 2, 10, 3, 15, 48, 100, 92, 7, 10];
+$array2 = [23, 32, 44, 55, 0, 18];
+$array3 = ["ss", 32, 44, 55, 0, 18];
+
 echo PHP_EOL . "DESC" . PHP_EOL;
 
 echo (advancedBlob($array1,false) ? 'could convert' : 'could not convert!').' ';
